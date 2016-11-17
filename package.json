@@ -1,6 +1,6 @@
 {
   "name": "co-booster",
-  "version": "1.0.0",
+  "version": "1.0.1",  
   "description": "performance tuning version of co (generator async control flow goodness)",
   "keywords": [
     "co",
