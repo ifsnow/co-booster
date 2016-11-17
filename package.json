@@ -1,0 +1,34 @@
+{
+  "name": "co-booster",
+  "version": "1.0.0",
+  "description": "performance tuning version of co (generator async control flow goodness)",
+  "keywords": [
+    "co",
+    "async",
+    "flow",
+    "generator",
+    "coro",
+    "coroutine"
+  ],
+  "devDependencies": {
+    "mocha": "^2.0.0",
+    "mz": "^1.0.2"
+  },
+  "scripts": {
+    "test": "mocha --harmony"
+  },
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT",
+  "author": "ifsnow <ifsnow@gmail.com> (https://github.com/ifsnow)",
+  "repository": "ifsnow/co-booster",
+  "bugs": {
+    "url": "https://github.com/ifsnow/co-booster/issues",
+    "email": "ifsnow@gmail.com"
+  },
+  "engines": {
+    "iojs": ">= 1.0.0",
+    "node": ">= 0.12.0"
+  }
+}

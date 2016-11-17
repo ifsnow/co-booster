@@ -1,0 +1,16 @@
+{
+  "name": "co-booster",
+  "version": "1.0.0",
+  "description": "performance tuning version of co (generator async control flow goodness)",
+  "keywords": [
+    "co",
+    "async",
+    "flow",
+    "generator",
+    "coro",
+    "coroutine"
+  ],
+  "repo": "ifsnow/co-booster",
+  "scripts": ["index.js"],
+  "licence": "MIT"
+}
