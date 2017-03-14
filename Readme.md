@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url]
 
-  `co-booster` is a performance tuning version of `co`. If you're already using `co`, you can make it work faster by changing only the module. Naturally, It's fully compatible with `co`.
+  `co-booster` is a performance tuning version of `co`. If you're already using `co`, you can make it work more faster by changing only the module. Naturally, It's fully compatible with `co`.
 
   `co` is Generator based control flow goodness for nodejs and the browser, using promises, letting you write non-blocking code in a nice-ish way. You can check out `co` [here](https://github.com/tj/co).
 
@@ -157,6 +157,18 @@ Any generator or generator function you can pass into `co-booster`
 can be yielded as well. This should generally be avoided
 as we should be moving towards spec-compliant `Promise`s instead.
 
+### How to skip errors in unsupported objects
+
+If you set `skipUnsupportError`, `co` will no longer throw errors for unsupported objects.
+
+```js
+co.skipUnsupportError = true;
+
+co(function* () {
+  yield undefined;
+});
+```
+
 ## API
 
 ### co(fn*).then( val => )
@@ -192,5 +204,5 @@ fn(true).then(function (val) {
 
   MIT
 
-[npm-image]: https://img.shields.io/npm/v/co.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/co-booster.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/co-booster

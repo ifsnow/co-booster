@@ -230,8 +230,12 @@ CoRoutinePrototype._executePromise = function(obj) {
         ctx._onRejected(err);
       });
     } else {
-        this._onRejected(new TypeError('You may only yield a function, promise, generator, array, or object, ' +
-        'but the following object was passed: "' + String(obj) + '"'));
+        if (co.skipUnsupportError === true) {
+          this._onFulfilled();
+        } else {
+          this._onRejected(new TypeError('You may only yield a function, promise, generator, array, or object, ' +
+          'but the following object was passed: "' + String(obj) + '"'));
+        }
     }
 };
 
